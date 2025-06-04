@@ -1,0 +1,14 @@
+Existem algumas coisas interessantes acerca do Scanner, algumas delas são:
+1 - quando se fazer necessário o uso de metodos Scanner da seguinte forma
+    x = sc.nextInt();
+    y = sc.nextLine();
+    z = sc.nextLine();
+    o primeiro metodo nextLine() não irá obter o resultado correto, devido a "falta" de uma quebra de linha, o conteudo ficará em branco, uma solução viavel
+    é adicionar um metodo nextLine() sem atribuir o seu valor a nenhum variavel, ficando da seguinte forma
+    x = sc.nextInt();
+    sc.nextLine();
+    y = sc.nextLine();
+    z = sc.nextLine();
+
+2 - Não existe um metodo que leia um char, para isso devemos usar o metodo next() junto com charAt(), ficando da seguinte forma
+    x = sc.next().charAt(0);
