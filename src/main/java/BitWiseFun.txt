@@ -1,0 +1,16 @@
+Em java nós podemos usar uma função chamada BitWise, ela serve para que possamos comparar elementos "bit-a-bit", é usada
+com os seguintes simbolos
+    & = Este tem a função de "E"
+    | = Este tem a funcão de "OU"
+    ^ = Este tem a função de "OU-Exclusivo"
+A unica diferença para os conectivos logicos é que esse por sua vez funciona comparando cada bit presente no elemento em
+questão, um exemplo de uso é para a verificação de um digito em um enderço de rede. Podemos definir uma mascara para que
+possamos verificar se o sexto digito de um endereço de rede é 0 ou 1, da ssguinte forma
+
+
+        int mask = 32 ou int mask = 0b00100000 (analogos)
+        if(mask & x){
+            System.out.println("The 6th bit is true");
+        }else {
+            System.out.println("The 6th is false");
+        }
