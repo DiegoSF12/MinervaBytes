@@ -1,3 +1,5 @@
+package basic;
+
 public class StringMani {
     public static void main(String[] args) {
         String teste = "Lorem ipsum dolor sit amet, \nconsectetur adipiscing elit. Donec nec justo pulvinar, ornare augue sed, \nporttitor ante. Nullam lacinia mi ipsum, sit amet hendrerit eros suscipit eget.   ";
