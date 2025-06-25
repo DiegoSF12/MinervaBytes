@@ -1,4 +1,4 @@
-package aplication;
+package aplication.arrays.entities;
 
 import java.util.Scanner;
 import java.util.Locale;

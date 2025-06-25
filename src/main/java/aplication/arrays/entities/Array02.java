@@ -1,4 +1,4 @@
-package aplication;
+package aplication.arrays.entities;
 
 public class Array02 {
     private String productName;

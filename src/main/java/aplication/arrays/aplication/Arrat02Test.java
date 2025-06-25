@@ -1,6 +1,7 @@
-package aplication;
+package aplication.arrays.aplication;
 
-import java.util.Arrays;
+import aplication.arrays.entities.Array02;
+
 import java.util.Scanner;
 import java.util.Locale;
 
