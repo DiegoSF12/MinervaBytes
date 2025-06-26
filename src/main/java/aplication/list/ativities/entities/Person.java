@@ -31,6 +31,10 @@ public class Person {
     public int getIdade(){
         return this.idade;
     }
+    public String toString(){
+
+
+    }
     public static double averageHeight(Person[] people){
         double media = 0;
         for(Person i : people){
