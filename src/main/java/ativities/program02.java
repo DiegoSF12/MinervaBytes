@@ -1,4 +1,6 @@
-package aplication;
+package ativities;
+
+import aplication.TriangleEntitie;
 
 import java.util.Scanner;
 import java.util.Locale;

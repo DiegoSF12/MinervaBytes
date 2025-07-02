@@ -1,6 +1,5 @@
 package aplication.dateTime.aplication;
 
-import java.sql.SQLOutput;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 
@@ -12,7 +11,7 @@ public class DateTimeFormatter01 {
         LocalTime t01 = LocalTime.now();
 
         DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yy HH:mm").withZone(ZoneId.systemDefault());
+        DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yy HH:mm").withZone(ZoneId.of("Europe/London"));
         DateTimeFormatter fmt3 = DateTimeFormatter.ISO_DATE_TIME;
         DateTimeFormatter fmt4 = DateTimeFormatter.ISO_INSTANT;
         //São constantes que podem ser usadas para definir o tipo de formatação que o Texto terá;

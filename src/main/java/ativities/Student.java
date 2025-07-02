@@ -1,4 +1,4 @@
-package aplication;
+package ativities;
 
 public class Student {
     private String name;
