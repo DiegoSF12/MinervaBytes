@@ -3,11 +3,11 @@ package aplication.enum_composity.aplication;
 import aplication.enum_composity.entities.OrderStatus;
 import aplication.enum_composity.entities.Order;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class OrderMain {
     public static void main(String[] args) {
-        Order order = new Order(1080, new Date(), OrderStatus.PENDING_PAYMENT);
+        Order order = new Order(1080, LocalDate.now(), OrderStatus.PENDING_PAYMENT);
         //Para converter uma string para um objeto enum, devemos usar o metodo valueOf, da seguinte forma
 
         OrderStatus os1 = OrderStatus.DELIVERED;
@@ -15,6 +15,6 @@ public class OrderMain {
         System.out.println(os1);
         System.out.println(os2);
 
-        System.out.println(order.toString());
+        System.out.println(order);
     }
 }
