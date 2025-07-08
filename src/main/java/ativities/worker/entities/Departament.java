@@ -1,4 +1,4 @@
-package ativities.entities.worker.entities;
+package ativities.worker.entities;
 
 public class Departament {
     private String name;
