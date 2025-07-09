@@ -1,11 +1,11 @@
 package FM_Pessoal.entitites;
 
 public enum Generos {
-    INDIE,
     POP,
-    LO_FI,
-    RAP,
+    INDIE,
     ROCK,
     MPB,
-    OUTRO;
+    JAZZ,
+    SERTANEJO,
+    LOFI;
 }

@@ -1,45 +1,36 @@
 package FM_Pessoal.entitites;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Usuario {
     private String nome;
     private List<Album> albunsFavoritos;
 
-    public Usuario(){
-
-    }
-
     public Usuario(String nome){
         this.nome = nome;
-        this.albunsFavoritos = new ArrayList<>();
+        albunsFavoritos = new ArrayList<>();
     }
 
-    public String getNome() {
-        return nome;
+    public String getNome(){
+        return this.nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void addAlbum(Album album){
+    public void adicionarAlbum(Album album){
         albunsFavoritos.add(album);
     }
 
-    public void removeAlbum(Album album){
+    public void removerAlbum(Album album){
         albunsFavoritos.remove(album);
     }
 
     public void listarAlbuns(){
         if(albunsFavoritos.isEmpty()){
-            System.out.println("Não existe uma lista de favoritos");
+            System.out.println("***Infelizmente a sua lista de albuns se encontra vazia***");
         }
         else{
-            System.out.printf("Albuns favoritos de %s",this.getNome());
-            for(Album a : albunsFavoritos){
-                System.out.print(" " + a);
+            for(Album x : albunsFavoritos){
+                System.out.println(x.toString());
             }
         }
     }

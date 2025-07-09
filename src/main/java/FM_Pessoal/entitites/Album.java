@@ -9,20 +9,11 @@ public class Album {
     public Album(){
 
     }
-
-    public Album(String nome, String artista, int anoLancamento, Generos genero){
+    public Album(String nome, String artista, int anoLancamento,Generos genero){
         this.nome = nome;
         this.artista = artista;
         this.anoLancamento = anoLancamento;
         this.genero = genero;
-    }
-
-    public String getArtista() {
-        return artista;
-    }
-
-    public void setArtista(String artista) {
-        this.artista = artista;
     }
 
     public String getNome() {
@@ -31,6 +22,14 @@ public class Album {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getArtista() {
+        return artista;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
     }
 
     public int getAnoLancamento() {
@@ -50,7 +49,14 @@ public class Album {
     }
 
     public String toString(){
-        return String.format("Nome do album: %s\nArtitsta: %s\nAno de Lançamento: %d\nGenero: %s",nome,artista,anoLancamento,genero);
-
+        return String.format("Nome do album: %s\nNome do artista: %s\nAno de lançamento: %d\nGenero: %s\n",this.getNome(),this.getArtista(),this.getAnoLancamento(),this.getGenero());
     }
 }
+
+
+
+
+
+
+
+
