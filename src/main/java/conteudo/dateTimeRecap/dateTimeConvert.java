@@ -44,5 +44,12 @@ public class dateTimeConvert {
         //Convertendeo de Zulu para Portugal
         System.out.println("\nLocalDateTime (Portugal): "+fmt2.format(r3));
 
+        //Como recuperar somente uma informação do DateTime
+        System.out.println("\nDia: "+r2.getDayOfMonth());
+        System.out.println("Mês: "+r2.getMonth());
+        System.out.println("Ano: "+r2.getYear());
+        System.out.println("Hora: "+r2.getHour());
+        System.out.println("Minutos: "+r2.getMinute());
+
     }
 }
