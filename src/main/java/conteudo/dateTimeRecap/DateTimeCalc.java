@@ -55,7 +55,7 @@ public class DateTimeCalc {
         System.out.println("T1 = "+ t1.toDays());
         System.out.println("T2 = "+ t2.toDays());
         System.out.println("T3 = " + t3.toDays());
-        System.out.println("T3 = "+ t3.toDays());
+        System.out.println("T3 = "+ t4.toDays());
 
     }
 }
