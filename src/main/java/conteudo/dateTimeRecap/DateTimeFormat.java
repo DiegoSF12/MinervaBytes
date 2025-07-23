@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
-public class dateTimeFormat {
+public class DateTimeFormat {
     public static void main(String[] args) {
         DateTimeFormatter fmt01 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         DateTimeFormatter fmt02 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");

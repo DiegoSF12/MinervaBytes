@@ -18,7 +18,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class dateTime {
+public class DateTime {
     public static void main(String[] args) {
         //Classe utilizada prioritariamente para instaciar objetos
         //Criando um novo padrão de mascara para formatação de datas e horas com o formatter
