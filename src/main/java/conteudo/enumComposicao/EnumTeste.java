@@ -1,3 +1,5 @@
+
+/*
 package conteudo.enumComposicao;
 
 import java.util.Date;
@@ -12,3 +14,4 @@ public class EnumTeste {
         
     }
 }
+*/

@@ -1,0 +1,90 @@
+Claro, Diego. Abaixo está uma lista com ideias de atividades práticas em **Java** que envolvem:
+
+* **Listas (`List<T>`)**
+* **Manipulação de datas (`LocalDate`, `LocalDateTime`)**
+* **Lógica aplicada ao problema**
+* **Design de classes e responsabilidades (sem exagerar no padrão, mas aplicando coesão e separação de interesses)**
+
+---
+
+### 🧠 **1. Sistema de Controle de Tarefas (To-Do List com Prioridades e Datas)**
+
+**Conceitos trabalhados:**
+
+* Criação de classes (`Tarefa`, `Usuario`, `Projeto`)
+* `List<T>` para armazenar tarefas por usuário ou projeto
+* `LocalDate` para prazos
+* Filtros por status e ordenação por prazo
+* Lógica para calcular se uma tarefa está atrasada
+
+---
+
+### 📚 **2. Sistema de Biblioteca (Empréstimo de Livros)**
+
+**Conceitos trabalhados:**
+
+* Classes: `Livro`, `Usuario`, `Emprestimo`
+* Uma `List<Emprestimo>` controlando todos os empréstimos
+* Datas: controle de data de empréstimo e devolução
+* Lógica para verificar livros disponíveis, emprestados ou em atraso
+
+---
+
+### 🎬 **3. Gerenciador de Catálogo de Filmes**
+
+**Conceitos trabalhados:**
+
+* Classes: `Filme`, `Genero`, `Catalogo`
+* `List<Filme>` para armazenar os filmes por gênero
+* Lógica de busca por nome, ano ou gênero
+* Datas: lançamento do filme (`LocalDate`)
+* Separação de responsabilidades entre repositório e lógica de busca
+
+---
+
+### 📅 **4. Agenda de Compromissos**
+
+**Conceitos trabalhados:**
+
+* Classe `Compromisso` com data, hora e descrição
+* `List<Compromisso>` para manter agenda do dia
+* `LocalDateTime` para agendamento
+* Lógica para evitar sobreposição de horários e organizar por ordem
+
+---
+
+### 💸 **5. Controle de Gastos Mensais**
+
+**Conceitos trabalhados:**
+
+* Classe `Gasto` com categoria, valor, data
+* `List<Gasto>` para armazenar gastos por mês
+* Uso de `LocalDate` para organizar gastos por mês e ano
+* Lógica de somar total por categoria e filtrar gastos por período
+
+---
+
+### 🛒 **6. Carrinho de Compras (Simples)**
+
+**Conceitos trabalhados:**
+
+* Classes: `Produto`, `ItemCarrinho`, `Carrinho`
+* Lista de itens no carrinho
+* Lógica de cálculo de subtotal e total
+* Datas de validade (para simulação de promoções ou estoque)
+
+---
+
+### 🧾 **7. Sistema de Vendas com Relatórios**
+
+**Conceitos trabalhados:**
+
+* Classes: `Venda`, `ItemVenda`, `Cliente`
+* Listas para armazenar vendas
+* `LocalDateTime` para data da venda
+* Lógica para gerar relatório de vendas por período e cliente
+
+---
+
+Se quiser, eu posso desenvolver um desses projetos junto com você, com esqueleto de classes, guia passo a passo e ir ajustando de acordo com seu nível.
+Quer escolher algum para começarmos?
