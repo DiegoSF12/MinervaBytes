@@ -27,5 +27,7 @@ public class Exercicio04 {
 
         salario = numeroHoras * valorHora;
         System.out.printf("Nome Funcionario: %s\nHoras trabalhadas: %.2f\nValor da hora trabalhada: %.2f\nSalario Relativo: %.2f", nome, numeroHoras, valorHora, salario);
+        
+        sc.close();
     }
 }

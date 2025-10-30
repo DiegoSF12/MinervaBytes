@@ -5,7 +5,6 @@ mensagem explicativa, conforme exemplos.
 
 package secao4.estruturaSequencial.atividades;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Exercicio01 {
