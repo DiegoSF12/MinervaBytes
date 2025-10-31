@@ -13,6 +13,41 @@ import java.util.Scanner;
 public class Exercicio03 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+        int op, alcool = 0, gasolina = 0, diesel = 0; 
+
+        System.out.println("Seja bem vindo ao sistema de abastecimento do Posto Economico");
+        System.out.println("Por favor, selecione uma das opções abaixo");
+        System.out.println("1 - Álcool\n2 - Gasolina\n3 - Diesel\n4 - Encerrar\n");
+        op = sc.nextInt();
+       
+        while (op != 4) {
+            if (op == 1) {
+                alcool++;
+            } else if (op == 2) {
+                gasolina++;
+            } else if (op == 3) {
+                diesel++;
+            } else {
+                while (!(op > 0 && op <= 4)) {
+                    System.out.println("POr favor, selecine somente uma das opções abaixo: ");
+                    System.out.println("1 - Álcool\n2 - Gasolina\n3 - Diesel\n4 - Encerrar\n");
+                    op = sc.nextInt();
+                    if (op == 1) {
+                        alcool++;
+                    } else if (op == 2) {
+                        gasolina++;
+                    } else if (op == 3) {
+                        diesel++;
+                    }
+                }
+            }
+            System.out.println("Por favor, selecione uma das opções abaixo");
+            System.out.println("1 - Álcool\n2 - Gasolina\n3 - Diesel\n4 - Encerrar");
+            op = sc.nextInt();
+        }
+        System.out.println("Muito Obrigado");
+        System.out.println("Relatorio de clientes x combustiveis");
+        System.out.printf("1 - Álcool: %d\n2 - Gasolina: %d\n3 - Diesel: %d\n", alcool, gasolina, diesel);
+        sc.close();
     }
 }
