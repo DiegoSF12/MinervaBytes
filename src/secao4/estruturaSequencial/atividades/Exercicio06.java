@@ -45,5 +45,7 @@ public class Exercicio06{
         System.out.printf("A area do quadrado é: %.2f\n", area04);
         System.out.printf("A area do retângulo é: %.2f\n", area05);
 
+        sc.close();
+
     }
 }
