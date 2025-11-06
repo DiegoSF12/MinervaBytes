@@ -41,8 +41,7 @@ public class Triangle {
         }
         else{
             double p = (ladoA + ladoB + ladoC) / 2;
-            double area;
-            return area = Math.sqrt(p * (p - ladoA) * (p - ladoB) * (p - ladoC));
+            return Math.sqrt(p * (p - ladoA) * (p - ladoB) * (p - ladoC));
         }
     }
 

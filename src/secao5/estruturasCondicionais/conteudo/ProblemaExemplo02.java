@@ -41,6 +41,7 @@ public class ProblemaExemplo02 {
                 System.out.println("Opção inválida");
                 break;
         }
+        sc.close();
 
     }
 }
