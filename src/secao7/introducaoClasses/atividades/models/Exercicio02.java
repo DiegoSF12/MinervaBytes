@@ -63,7 +63,7 @@ public class Exercicio02 {
         double porcentagem;
         System.out.print("Digite a porcentagem a ser acrescida: ");
         porcentagem = sc.nextDouble();
-        System.out.printf("O salario com %.2f de acrescimo é R$ %.2f",porcentagem,(this.grossSalary + ((this.grossSalary * porcentagem) / 100)));
+        System.out.printf("O salario com %.2f de acrescimo é R$ %.2f",porcentagem, (((grossSalary * porcentagem) / 100) + (grossSalary - tax)));
     }
 
 

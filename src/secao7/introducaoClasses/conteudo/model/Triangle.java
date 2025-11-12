@@ -1,4 +1,4 @@
-package secao7.introducaoClasses.conteudo.problemaExemplo.model;
+package secao7.introducaoClasses.conteudo.model;
 
 public class Triangle {
     private double ladoA;

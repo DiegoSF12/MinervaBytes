@@ -52,7 +52,7 @@ public class Stock {
         quantity = sc.nextInt();
         this.setQuantity(this.getQuantity() + quantity);
         System.out.println("Informaçõe atualizadas");
-        System.out.printf("Nome Produto: %s\nPreço Unitario: %.2f\nValor total em estoque:Quantidade em estoque: %d", this.getName(), this.getPrice(), this.getQuantity());
+        System.out.printf("Nome Produto: %s\nPreço Unitario: %.2f\nValor total em estoque: %.2f\nQuantidade em estoque: %d", this.getName(), this.getPrice(),(this.getQuantity() * this.getPrice() ), this.getQuantity());
     }
     public void removeProduct(Scanner sc){
         int newQuantity;
@@ -66,5 +66,9 @@ public class Stock {
             System.out.println("Informaçõe atualizadas");
             System.out.printf("Nome Produto: %s\nPreço Unitario: %.2f\nQuantidade em estoque: %d", this.getName(), this.getPrice(), this.getQuantity());
         }
+    }
+    double valorTeste = Float.MAX_VALUE;
+    public String toString(){
+        return "Teste toString()" + " concatenado " + this.name + "\n" + String.format("%.3f", valorTeste);
     }
 }

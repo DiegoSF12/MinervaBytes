@@ -1,6 +1,6 @@
-package secao7.introducaoClasses.conteudo.problemaExemplo.test;
+package secao7.introducaoClasses.conteudo.test;
 
-import secao7.introducaoClasses.conteudo.problemaExemplo.model.Triangle;
+import secao7.introducaoClasses.conteudo.model.Triangle;
 
 public class TriangleMain {
     public static void main(String[] args) {
