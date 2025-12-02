@@ -30,5 +30,6 @@ public class Exercicio06 {
        else{
            System.out.println("Fora do intervalo");
        }
+        sc.close();
     }
 }

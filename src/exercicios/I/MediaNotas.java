@@ -3,7 +3,6 @@
     Faça um programa que leia o nome de um aluno e as suas três notas (P1, P2, P3). Calcule e exiba a média aritmética simples do aluno.
  */
 package exercicios.I;
-import java.io.Console;
 import java.util.Scanner;
 import java.util.Locale;
 
@@ -27,5 +26,6 @@ public class MediaNotas {
         double media = (P1 + P2 + P3) / 3;
         System.out.flush();
         System.out.printf("%s, a sua media anual foi de %.2f pontos", nome, media);
+        sc.close();
     }
 }

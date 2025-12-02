@@ -39,5 +39,6 @@ public class Exercicio08 {
         else{
             System.out.printf("Imposto R$ %.2f\n", imposto);
         }
+        sc.close();
     }
 }

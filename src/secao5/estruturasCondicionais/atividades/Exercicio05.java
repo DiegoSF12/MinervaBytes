@@ -4,7 +4,7 @@ seguir, calcule e mostre o valor da conta a pagar.
 */
 package secao5.estruturasCondicionais.atividades;
 
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 
 public class Exercicio05 {
