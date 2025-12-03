@@ -29,9 +29,6 @@ public class ConversoSalario {
 
         System.out.println("Ficha do funcionario");
         System.out.printf("Nome: %s\nMatricula: %s\nHoras trabalhadas: %d\nValor da hora: %.2f\nSalario: %.2f\n",nome,matricula,horasTrabalhadas,valorHora,salario);
-
-
-
     }
 
 }
