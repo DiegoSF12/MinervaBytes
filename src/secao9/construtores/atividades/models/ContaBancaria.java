@@ -1,6 +1,5 @@
 package secao9.construtores.atividades.models;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaBancaria {
