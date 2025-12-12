@@ -1,6 +1,6 @@
-package secao10.arrays.conteudo.test;
+package secao10.conjuntos.conteudo.test;
 
-import secao10.arrays.conteudo.models.Produtos;
+import secao10.conjuntos.conteudo.models.Produtos;
 import java.util.*;
 
 public class ProdutoTest {

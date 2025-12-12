@@ -2,10 +2,10 @@
     A dona de um pensionato possui dez quartos para alugar para estudantes, sendo esses quartos identificados pelos numeros 0 a 9.
     Fazer um programa que inicie com todos os dez quartos vazios, e depois leia a quantidade N representando o número de estudantes que vão alugar os quartos(N pode ser de 1 a 10). Em seguida, registre o aluguel dos N estudantes. Para cada registro de aluguel, informar o nome e e-mail do estudante, bem como qual dos quartos ele escolheu (de 0 a 9). Ao final, seu programa deve imprimir um relatorio de todas as ocupções do pensionato, por ordem de quarto.
 */
-package secao10.arrays.atividades.test;
+package secao10.conjuntos.atividades.test;
 
 import java.util.Scanner;
-import secao10.arrays.atividades.models.Hospede;
+import secao10.conjuntos.atividades.models.Hospede;
 
 public class Pensionato {
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class Pensionato {
             email = sc.nextLine();
             System.out.print("Agora informe o numero do quarto desejado: ");
             numeroQuarto = sc.nextInt();
-            if (hospedes[numeroQuarto] != null) {
+            if (hospedes[numeroQuarto - 1] != null) {
                 boolean loop = true;
                 while (loop) {
                     System.out.println("Quarto ocupado, escolha um dos disponiveis na lista abaixo");
@@ -44,13 +44,13 @@ public class Pensionato {
                             System.out.print((j + 1) + " | ");
                     }
                     numeroQuarto = sc.nextInt();
-                    if (hospedes[numeroQuarto] == null) {
+                    if (hospedes[numeroQuarto - 1] == null) {
                         loop = false;
                     }
                 }
             }
-            hospedes[numeroQuarto] = new Hospede(nome, email);
-            hospedes[numeroQuarto].setNumQuarto(numeroQuarto);
+            hospedes[numeroQuarto - 1] = new Hospede(nome, email);
+            hospedes[numeroQuarto - 1].setNumQuarto(numeroQuarto - 1);
         }
         System.out.println("Quartos alugados");
         for (int k = 0; k < hospedes.length; k++) {

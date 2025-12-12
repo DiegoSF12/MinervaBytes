@@ -2,7 +2,7 @@
     Problema exemplo 02
     Fazer um programa para ler um número inteiro N e os dados(nome e preço) de N produtos. Armazene os N produtos em um vetor. Em seguida, mostrar o preço médios dos produtos.
 */
-package secao10.arrays.conteudo.models;
+package secao10.conjuntos.conteudo.models;
 
 public class Produtos {
     String nomeProduto;

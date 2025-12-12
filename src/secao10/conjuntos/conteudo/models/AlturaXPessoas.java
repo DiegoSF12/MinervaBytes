@@ -3,7 +3,7 @@
     Fazer um programa para ler um numero inteiro N e a altura de N pessoas. Armazene as N alturas em um vetor. Em seguida, mostrar a altura média dessas pessoas
 */
 
-package secao10.arrays.conteudo.models;
+package secao10.conjuntos.conteudo.models;
 
 import java.util.Scanner;
 import java.util.Locale;
