@@ -25,5 +25,6 @@ public class ProdutoTest {
             mediaPrecos += listaProdutos[i].getPrecoProduto(); 
         }
         System.out.printf("O valor médio da sua lista de compras foi: R$%.2f", (mediaPrecos / listaProdutos.length));
+        sc.close();
     }
 }
