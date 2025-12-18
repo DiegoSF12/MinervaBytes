@@ -31,6 +31,13 @@ public class PessoasTest {
         }    
         for(Pessoas x:listaPessoas){
             System.out.println(x.toString());
-        }    
+        }
+        System.out.print("Digite o nome para remover: ");
+        String remove = sc.nextLine();
+        listaPessoas.removeIf(x -> x.getNome().equals(remove));
+
+        for(Pessoas x:listaPessoas){
+            System.out.println(x.toString());
+        }
     }
 }
