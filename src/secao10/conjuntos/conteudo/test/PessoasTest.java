@@ -39,5 +39,6 @@ public class PessoasTest {
         for(Pessoas x:listaPessoas){
             System.out.println(x.toString());
         }
+        sc.close();
     }
 }
