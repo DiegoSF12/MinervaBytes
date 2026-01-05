@@ -28,5 +28,9 @@ public class Funcionario01 {
     public void increaseSalary(double percentage){
         this.salary = ((salary * percentage) / 100 + salary);
     }
+    @Override
+    public String toString(){
+        return String.format("\n========================\nID: %d\nName: %s\nSalary: %.2f",this.getId(), this.getName(), this.getSalary());
+    }
 
 }
