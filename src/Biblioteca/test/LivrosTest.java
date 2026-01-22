@@ -11,7 +11,7 @@ public class LivrosTest {
         Livro.cadastrarLivros(sc, livros);
         Livro.listarLivros(livros);
         Livro.emprestarLivro(sc, livros);
-        Livro.emprestarLivro(sc, livros);
+        Livro.devolverLivro(sc, livros);
         Livro.listarLivros(livros);
     }
 }

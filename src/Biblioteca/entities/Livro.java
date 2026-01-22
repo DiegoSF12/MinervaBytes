@@ -69,15 +69,35 @@ public class Livro{
                     break;
                 }
                 System.out.println("Digite o indice do livro");
-                int indexAux = sc.nextInt() - 1;
-                while(indexAux < 0 && indexAux > livros.size()){
+                int indexAux = sc.nextInt();
+                while(indexAux < 0 || indexAux > livros.size()){
                     System.out.println("O valor esta fora do escopo da lista");
                     System.out.print("Informe um indice valido: ");
                     indexAux = sc.nextInt();
                 }
-                index = indexAux;
+                index = indexAux - 1;
             }
         livros.get(index).setStatus(false);
     }
-
+    public static void devolverLivro(Scanner sc, ArrayList<Livro> livros){
+        sc.nextLine();
+        boolean exist = false;
+        int auxIndex = -1;
+        System.out.print("Por favor, informe o titulo do livro que será devolvido: ");
+        String auxTitulo = sc.nextLine();
+        for(int i = 0; i < livros.size(); i++){
+            if(livros.get(i).getTitulo().equals(auxTitulo)){
+                if(livros.get(i).getStatus() == false){
+                    exist = true;
+                    auxIndex = i;
+                }
+            }
+        }
+         if(exist == true && auxIndex >= 0){
+                livros.get(auxIndex).setStatus(true);
+        }else{
+            System.out.println("Livro não encontrado ou ja emprestado");
+        }
+        
+    }
 }
