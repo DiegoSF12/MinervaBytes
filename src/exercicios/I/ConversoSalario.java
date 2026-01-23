@@ -1,3 +1,4 @@
+
 /*
     Conversor de Salário:
     Desenvolva um programa que pergunte quanto um funcionário ganha por hora e o número de horas trabalhadas no mês.
