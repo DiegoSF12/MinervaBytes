@@ -21,7 +21,7 @@ public class Instanciacao {
         System.out.println("LocalDate Parse: " + d04);
 
         LocalDateTime d05 = LocalDateTime.parse("2020-01-15T17:30");
-        System.out.println("Meu melhor aniverssãrio (LocalDateTime Parse): " + d05);
+        System.out.println("Meu melhor aniverssãrio (LocalDateTime Parse): " + d05.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm"))); //Usei um formatter
 
         Instant d06 = Instant.parse("2020-01-15T17:30:00Z");
         System.out.println("Instant Parse: " + d06);

@@ -14,7 +14,6 @@ public class Formatacao{
         Instant d03 = Instant.now();
 
         DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
         DateTimeFormatter fmt4 = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
 
