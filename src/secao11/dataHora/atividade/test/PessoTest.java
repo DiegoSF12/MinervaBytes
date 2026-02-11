@@ -1,8 +1,6 @@
 package secao11.dataHora.atividade.test;
 
-import java.time.Duration;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.ArrayList;
 import secao11.dataHora.atividade.models.Pessoa;
