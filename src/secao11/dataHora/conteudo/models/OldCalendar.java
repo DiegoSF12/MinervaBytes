@@ -26,6 +26,7 @@ public class OldCalendar {
         System.out.println("Hora em saio do serviço em BRT (GMT-3): " + sdf01.format(dt01));
         System.out.println("Minutos: " + minutos);
         System.out.println("Horas: " + horas);
+        System.out.println("Dia da semana: " + primeiroDia);
     }
 
 }
