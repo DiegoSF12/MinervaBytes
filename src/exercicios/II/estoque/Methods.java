@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 
 public class Methods {
-    public static void addProduto(Scanner sc, ArrayList <Produtos> produtos){
+    public static void addProduto(Scanner sc, ArrayList<Produtos> produtos) {
         System.out.println("___________________________________________________");
         System.out.println();
         System.out.println();
@@ -16,46 +16,42 @@ public class Methods {
         double preco = sc.nextDouble();
         System.out.print("E por fim, a quantidade de produtos adicionados: ");
         int quantidade = sc.nextInt();
-        produtos.add(new Produtos(nome, preco,quantidade));
-        System.out.printf("Produto %s adicionado com sucesso!",nome);
+        produtos.add(new Produtos(nome, preco, quantidade));
+        System.out.printf("Produto %s adicionado com sucesso!", nome);
     }
-    public static void findProduto(Scanner sc, ArrayList <Produtos> produtos){
-        System.out.println("___________________________________________________");
-        System.out.println();
-        System.out.println();
-        sc.nextLine();
-        System.out.print("Infome o nome do produto para realizar a busca: ");
-        String find = sc.nextLine();
-        for(Produtos x : produtos){
-           if(x.getNome().equals(find)){
-                System.out.println("___________________________________________________");
-                System.out.println("\n\nProduto encontrado");
-                System.out.println(x);
-                System.out.println("___________________________________________________");
-           }
-           else{
-            System.out.println("\n\n___________________________________________________");
-            System.out.println("Produto não encontrado, deseja fazer outra busca ? (S/N");
-            String opt = sc.nextLine().toUpperCase();
-            if(opt.equals("S")){
-                System.out.print("Informe o nome do produto para realizar a busca: ");
-                find = sc.nextLine();
-                if(x.getNome().equals(find)){
+
+    public static void findProduto(Scanner sc, ArrayList<Produtos> produtos) {
+        boolean loop = true;
+        while (loop) {
+            System.out.println("___________________________________________________");
+            System.out.println();
+            System.out.println();
+            sc.nextLine();
+            System.out.print("Infome o nome do produto para realizar a busca: ");
+            String find = sc.nextLine();
+            Produtos findProduct = null;
+            for (Produtos x : produtos) {
+                if (x.getNome().equals(find)) {
+                    findProduct = x;
+                    break;
+                }
+                if (findProduct != null) {
+                    System.out.println("___________________________________________________");
+                    System.out.println("\n\nProduto encontrado");
+                    System.out.println(findProduct);
+                    System.out.println("___________________________________________________");
+                    loop = false;
+                } else {
                     System.out.println("\n\n___________________________________________________");
-                    System.out.println(x);
-                    System.out.println("\n\n___________________________________________________");
+                    System.out.println("Produto não encontrado, deseja fazer outra busca ? (S/N)");
+                    String opt = sc.nextLine().toUpperCase();
+                    if (!(opt.equals("S"))) {
+                        loop = false;
+                        System.out.println();
+                        System.out.println("Saindo da busca...");
+                    }
                 }
             }
-            else{
-                System.out.println("Produto não encontrado");
-                System.exit(0);
-            }
-           }
         }
     }
-    public static void removeProduto(){
-
-    }
-   
-
 }
