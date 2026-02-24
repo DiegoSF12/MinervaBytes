@@ -17,7 +17,7 @@ public class Methods {
         System.out.print("E por fim, a quantidade de produtos adicionados: ");
         int quantidade = sc.nextInt();
         produtos.add(new Produtos(nome, preco, quantidade));
-        System.out.printf("Produto %s adicionado com sucesso!", nome);
+        System.out.printf("Produto %s adicionado com sucesso!\n", nome);
     }
 
     public static void findProduto(Scanner sc, ArrayList<Produtos> produtos) {
@@ -31,7 +31,7 @@ public class Methods {
             String find = sc.nextLine();
             Produtos findProduct = null;
             for (Produtos x : produtos) {
-                if (x.getNome().equals(find)) {
+                if (x.getNome().equalsIgnoreCase(find)) {
                     findProduct = x;
                     break;
                 }
