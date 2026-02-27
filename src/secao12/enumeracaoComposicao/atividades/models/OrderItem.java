@@ -36,9 +36,9 @@ public class OrderItem {
     }
 
     //TO DO
-    //public Double subTotal(){
-    //    return
-    //}
+    public Double subTotal(){
+        return this.price * quantity;
+    }
 
     
 }
