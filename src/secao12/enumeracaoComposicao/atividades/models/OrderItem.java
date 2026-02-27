@@ -31,14 +31,13 @@ public class OrderItem {
         this.product = product;
     }
 
-    public Product geProduct(){
+    public Product getProduct(){
         return this.product;
     }
 
-    //TO DO
+
     public Double subTotal(){
         return this.price * quantity;
     }
-
     
 }
