@@ -25,7 +25,11 @@ public class Order{
     public void setStatus(OrderStatus status){
         this.status = status;
     }
-    public voi
-
+    public void addItem(OrderItem item){
+        items.add(item);
+    }
+    public void removeItem(OrderItem item){
+        items.remove(item);
+    }
 
 }

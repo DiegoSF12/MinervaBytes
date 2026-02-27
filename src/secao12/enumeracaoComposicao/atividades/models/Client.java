@@ -34,6 +34,7 @@ public class Client {
     }
     
     public Date getBirthDate(){
-        return birthDate;z
+        return birthDate;
     }
 }
+ 
