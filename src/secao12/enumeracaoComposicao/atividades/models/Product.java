@@ -18,8 +18,13 @@ public class Product {
     public void setPrice(Double price){
         this.price = price;
     }
-    public Double getPrice(){
+
+    public Double getPrice() {
         return this.price;
     }
-
+    
+    @Override
+    public String toString() {
+        return String.format("%s", this.getName());
+    }
 }

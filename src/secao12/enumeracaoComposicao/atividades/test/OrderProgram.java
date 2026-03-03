@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class OrderProgram {
     public static void main (String[] args)throws ParseException {
-        Locale locale = Locale.US;
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -32,23 +32,23 @@ public class OrderProgram {
         System.out.println("Enter order data");
         System.out.print("Status: ");
         String status = sc.nextLine();
-        Order order01 = new Order(OrderStatus.valueOf(status));
+        Order order01 = new Order(OrderStatus.valueOf(status), client01);
         sc.nextLine();
 
 
         System.out.print("How many items to this order ? ");
         int count = sc.nextInt();
-        for(int i = 0; i < count; i++){
+        for (int i = 0; i < count; i++) {
             System.out.print("Product Name: ");
             String nameProduct = sc.nextLine();
             sc.nextLine();
             System.out.print("Product Price: ");
-            double price = sc.nextInt();
+            double price = sc.nextDouble();
             System.out.println("Quantity: ");
             int quantity = sc.nextInt();
             order01.addItem(new OrderItem(quantity, price, new Product(nameProduct, price)));
         }
-        
-
+        System.out.println(order01);
+        sc.close();
     }
 }
